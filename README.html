@@ -1,26 +1,27 @@
 
- <!DOCTYPE HTML>
+  
+    <!DOCTYPE HTML>
 <html lang="zh_CN">
 <head>
   <meta charset="UTF-8">
   
-    <title>hexo折腾 | MarkDown使用</title>
+    <title>MarkDown使用</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="Dihihi">
     
 
     
-    <meta name="description" content="瞎折腾一下,在github上用hexo管理博客,简单记录一下。">
-<meta property="og:type" content="article">
-<meta property="og:title" content="hexo折腾">
-<meta property="og:url" content="http://dihihi.github.io/2015/10/09/hexo折腾/index.html">
+    <meta name="description" content="sourcehexo source">
+<meta property="og:type" content="website">
+<meta property="og:title" content="MarkDown使用">
+<meta property="og:url" content="http://dihihi.github.io/README.html">
 <meta property="og:site_name" content="MarkDown使用">
-<meta property="og:description" content="瞎折腾一下,在github上用hexo管理博客,简单记录一下。">
-<meta property="og:updated_time" content="2015-10-09T16:13:25.764Z">
+<meta property="og:description" content="sourcehexo source">
+<meta property="og:updated_time" content="2015-10-09T15:40:02.263Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="hexo折腾">
-<meta name="twitter:description" content="瞎折腾一下,在github上用hexo管理博客,简单记录一下。">
+<meta name="twitter:title" content="MarkDown使用">
+<meta name="twitter:description" content="sourcehexo source">
 
     
     <link rel="alternative" href="/atom.xml" title="MarkDown使用" type="application/atom+xml">
@@ -35,9 +36,9 @@
     <link rel="stylesheet" href="/css/style.css" type="text/css">
 </head>
 
-  <body>
-    <header>
-      
+      <body>
+        <header>
+          
 <div>
 		
 			<div id="imglogo">
@@ -72,69 +73,28 @@
 				</ul>
 			</nav>			
 </div>
-    </header>
-    <div id="container">
-      <div id="main" class="post" itemscope itemprop="blogPost">
+        </header>
+        <div id="container">
+          <div id="main" class="page" itemscope itemprop="blogPost">
   
 	<article itemprop="articleBody"> 
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2015/10/09/hexo折腾/" title="hexo折腾" itemprop="url">hexo折腾</a>
+      <a href="/README.html" title="" itemprop="url"></a>
   </h1>
   <p class="article-author">By
        
 		<a href="/about" title="Dihihi" target="_blank" itemprop="author">Dihihi</a>
 		
   <p class="article-time">
-    <time datetime="2015-10-09T13:09:58.000Z" itemprop="datePublished"> 發表於 2015-10-09</time>
+    <time datetime="2015-10-09T15:40:02.263Z" itemprop="datePublished"> 發表於 2015-10-09</time>
     
   </p>
 </header>
 	<div class="article-content">
 		
-		<div id="toc" class="toc-article">
-			<strong class="toc-title">文章目錄</strong>
-		
-			<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#其他电脑上使用"><span class="toc-number">1.</span> <span class="toc-text">其他电脑上使用</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#引用链接"><span class="toc-number">2.</span> <span class="toc-text">引用链接</span></a></li></ol>
-		
-		</div>
-		
-		<p>瞎折腾一下,在github上用hexo管理博客,简单记录一下。<br><a id="more"></a><br>需要安装nodejs git以及</p>
-<pre><code>npm <span class="operator"><span class="keyword">install</span> -<span class="keyword">g</span> hexo</span>
-</code></pre><p>在目录里<br>    hexo init<br>    npm install</p>
-<pre><code>hexo generate
-hexo <span class="keyword">server</span>
-</code></pre><p>创建github工厂”username.github.io”</p>
-<p>编辑_config.yml</p>
-<pre><code><span class="preprocessor"># Site</span>
-<span class="label">title:</span> MarkDown使用
-<span class="label">subtitle:</span> 学习
-<span class="label">description:</span> 学习 笔记 管理
-<span class="label">author:</span> Dihihi
-<span class="label">language:</span> zh_CN
-<span class="label">timezone:</span> Asia/Shanghai
-
-<span class="preprocessor"># Extensions</span>
-<span class="label">theme:</span> jacman
-<span class="label">stylus:</span> 
-    compress: true
-
-<span class="preprocessor"># Deployment</span>
-<span class="label">deploy:</span>
-<span class="label">type:</span> git
-<span class="label">repository:</span> git@github.com:dihihi/dihihi.github.io.git
-<span class="label">branch:</span> master
-</code></pre><p>没有部署器的话，安装<br>    npm install hexo-deployer-git –save</p>
-<pre><code>hexo <span class="keyword">generate</span> == hexo <span class="keyword">g</span>
-hexo deploy == hexo <span class="literal">d</span>
-
-hexo server == hexo <span class="literal">s</span>
-hexo new == hexo <span class="keyword">n</span>
-hexo <span class="keyword">d</span> -<span class="keyword">g</span> #生成部署
-</code></pre><p>更换主题时，修改_config.yml,以及<br>    rm -rf public<br>    hexo clean</p>
-<h1 id="其他电脑上使用">其他电脑上使用</h1><p>主题的话可以fork一个然后自定义修改<br>    git remote add mine xxx<br>    git push -u mine master<br>    git clone git@github.com:dihihi/jacman.git themes/jacman<br>备份_config.xml<br>source目录可以创建一个仓库保存在github上</p>
-<h1 id="引用链接">引用链接</h1><p><a href="http://wuchong.me/jacman/2014/11/20/how-to-use-jacman/#more" title="打开" target="_blank" rel="external">如何使用 Jacman 主题</a><br><a href="http://wowubuntu.com/markdown/" title="打开" target="_blank" rel="external">Markdown 语法说明 (简体中文版)</a><br><a href="http://pleasureswx123.github.io/2014/08/29/%E5%9C%A8github%E4%B8%8A%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/" target="_blank" rel="external">在github上用hexo搭建博客</a><br><a href="https://hexo.io/docs/index.html" target="_blank" rel="external">hexo Documentation</a><br><a href="http://ibruce.info/2013/11/22/hexo-your-blog/" target="_blank" rel="external">hexo你的博客</a></p>
+		<h1 id="source">source</h1><p>hexo source</p>
   
 	</div>
 		<footer class="article-footer clearfix">
@@ -147,7 +107,7 @@ hexo <span class="keyword">d</span> -<span class="keyword">g</span> #生成部�
 
 	<div class="article-share" id="share">
 	
-	  <div data-url="http://dihihi.github.io/2015/10/09/hexo折腾/" data-title="hexo折腾 | MarkDown使用" data-tsina="null" class="share clearfix">
+	  <div data-url="http://dihihi.github.io/README.html" data-title="MarkDown使用" data-tsina="null" class="share clearfix">
 	  </div>
 	
 	</div>
@@ -158,19 +118,6 @@ hexo <span class="keyword">d</span> -<span class="keyword">g</span> #生成部�
    	       
 	</article>
 	
-<nav class="article-nav clearfix">
- 
- <div class="prev" >
- <a href="/2015/10/09/hello-world/" title="Hello World">
-  <strong>上一篇：</strong><br/>
-  <span>
-  Hello World</span>
-</a>
-</div>
-
-
-</nav>
-
 	
 
 <section id="comments" class="comment">
@@ -180,62 +127,8 @@ hexo <span class="keyword">d</span> -<span class="keyword">g</span> #生成部�
 </section>
 
 </div>  
-      <div class="openaside"><a class="navbutton" href="#" title="顯示側邊欄"></a></div>
-
-  <div id="toc" class="toc-aside">
-  <strong class="toc-title">文章目錄</strong>
- 
- <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#其他电脑上使用"><span class="toc-number">1.</span> <span class="toc-text">其他电脑上使用</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#引用链接"><span class="toc-number">2.</span> <span class="toc-text">引用链接</span></a></li></ol>
- 
-  </div>
-
-<div id="asidepart">
-<div class="closeaside"><a class="closebutton" href="#" title="隱藏側邊欄"></a></div>
-<aside class="clearfix">
-
-  
-
-
-  
-
-  
-
-  <div class="linkslist">
-  <p class="asidetitle">友情鏈接</p>
-    <ul>
-        
-          <li>
-            
-            	<a href="https://baidu.com" target="_blank" title="一个面向程序员交流分享的新一代社区">百度</a>
-            
-          </li>
-        
-          <li>
-            
-            	<a href="http://wuchong.me" target="_blank" title="Jark&#39;s Blog">Jark&#39;s Blog</a>
-            
-          </li>
-        
-    </ul>
-</div>
-
-  
-
-
-  <div class="rsspart">
-	<a href="/atom.xml" target="_blank" title="rss">RSS 訂閱</a>
-</div>
-
-  <div class="weiboshow">
-  <p class="asidetitle">新浪微博</p>
-    <iframe width="100%" height="119" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=119&fansRow=2&ptype=1&speed=0&skin=9&isTitle=1&noborder=1&isWeibo=0&isFans=0&uid=null&verifier=&dpc=1"></iframe>
-</div>
-
-
-</aside>
-</div>
-    </div>
-    <footer><div id="footer" >
+        </div>
+        <footer><div id="footer" >
 	
 	<div class="line">
 		<span></span>
@@ -272,7 +165,7 @@ hexo <span class="keyword">d</span> -<span class="keyword">g</span> #生成部�
 		</p>
 </div>
 </footer>
-    <script src="/js/jquery-2.0.3.min.js"></script>
+        <script src="/js/jquery-2.0.3.min.js"></script>
 <script src="/js/jquery.imagesloaded.min.js"></script>
 <script src="/js/gallery.js"></script>
 <script src="/js/jquery.qrcode-0.12.0.min.js"></script>
@@ -316,36 +209,8 @@ $(document).ready(function(){
       m.removeClass('moveMain');
       a.css('display', 'block').removeClass('fadeOut');
       o.css('display', 'none');
-      
-      $('#toc.toc-aside').css('display', 'none');
         
     }
-  });
-});
-</script>
-
-<script type="text/javascript">
-$(document).ready(function(){ 
-  var ai = $('.article-content>iframe'),
-      ae = $('.article-content>embed'),
-      t  = $('#toc'),
-      ta = $('#toc.toc-aside'),
-      o  = $('.openaside'),
-      c  = $('.closeaside');
-  if(ai.length>0){
-    ai.wrap('<div class="video-container" />');
-  };
-  if(ae.length>0){
-   ae.wrap('<div class="video-container" />');
-  };
-  c.click(function(){
-    ta.css('display', 'block').addClass('fadeIn');
-  });
-  o.click(function(){
-    ta.css('display', 'none');
-  });
-  $(window).scroll(function(){
-    ta.css("top",Math.max(140,320-$(this).scrollTop()));
   });
 });
 </script>
@@ -478,5 +343,6 @@ $(document).ready(function(){
 
 <!-- Tiny_search End -->
 
-  </body>
-</html>
+      </body>
+     </html>
+     
