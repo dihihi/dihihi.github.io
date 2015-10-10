@@ -11,16 +11,16 @@
     
 
     
-    <meta name="description" content="瞎折腾一下,在github上用hexo管理博客,简单记录一下。">
+    <meta name="description" content="瞎折腾,在github上用hexo管理博客,简单记录一下。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="hexo折腾">
 <meta property="og:url" content="http://dihihi.github.io/2015/10/09/hexo折腾/index.html">
 <meta property="og:site_name" content="MarkDown使用">
-<meta property="og:description" content="瞎折腾一下,在github上用hexo管理博客,简单记录一下。">
-<meta property="og:updated_time" content="2015-10-09T16:13:25.764Z">
+<meta property="og:description" content="瞎折腾,在github上用hexo管理博客,简单记录一下。">
+<meta property="og:updated_time" content="2015-10-10T15:19:56.856Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo折腾">
-<meta name="twitter:description" content="瞎折腾一下,在github上用hexo管理博客,简单记录一下。">
+<meta name="twitter:description" content="瞎折腾,在github上用hexo管理博客,简单记录一下。">
 
     
     <link rel="alternative" href="/atom.xml" title="MarkDown使用" type="application/atom+xml">
@@ -100,11 +100,13 @@
 		
 		</div>
 		
-		<p>瞎折腾一下,在github上用hexo管理博客,简单记录一下。<br><a id="more"></a><br>需要安装nodejs git以及</p>
+		<p>瞎折腾,在github上用hexo管理博客,简单记录一下。<br><a id="more"></a><br>需要安装nodejs git以及</p>
 <pre><code>npm <span class="operator"><span class="keyword">install</span> -<span class="keyword">g</span> hexo</span>
-</code></pre><p>在目录里<br>    hexo init<br>    npm install</p>
-<pre><code>hexo generate
-hexo <span class="keyword">server</span>
+</code></pre><p>在目录里</p>
+<pre><code>hexo init
+npm <span class="operator"><span class="keyword">install</span>
+hexo generate
+hexo <span class="keyword">server</span></span>
 </code></pre><p>创建github工厂”username.github.io”</p>
 <p>编辑_config.yml</p>
 <pre><code><span class="preprocessor"># Site</span>
@@ -132,9 +134,21 @@ hexo deploy == hexo <span class="literal">d</span>
 hexo server == hexo <span class="literal">s</span>
 hexo new == hexo <span class="keyword">n</span>
 hexo <span class="keyword">d</span> -<span class="keyword">g</span> #生成部署
-</code></pre><p>更换主题时，修改_config.yml,以及<br>    rm -rf public<br>    hexo clean</p>
-<h1 id="其他电脑上使用">其他电脑上使用</h1><p>主题的话可以fork一个然后自定义修改<br>    git remote add mine xxx<br>    git push -u mine master<br>    git clone git@github.com:dihihi/jacman.git themes/jacman<br>备份_config.xml<br>source目录可以创建一个仓库保存在github上</p>
-<h1 id="引用链接">引用链接</h1><p><a href="http://wuchong.me/jacman/2014/11/20/how-to-use-jacman/#more" title="打开" target="_blank" rel="external">如何使用 Jacman 主题</a><br><a href="http://wowubuntu.com/markdown/" title="打开" target="_blank" rel="external">Markdown 语法说明 (简体中文版)</a><br><a href="http://pleasureswx123.github.io/2014/08/29/%E5%9C%A8github%E4%B8%8A%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/" target="_blank" rel="external">在github上用hexo搭建博客</a><br><a href="https://hexo.io/docs/index.html" target="_blank" rel="external">hexo Documentation</a><br><a href="http://ibruce.info/2013/11/22/hexo-your-blog/" target="_blank" rel="external">hexo你的博客</a></p>
+</code></pre><p>更换主题时，修改_config.yml,以及</p>
+<pre><code>rm -rf <span class="keyword">public</span>
+hexo clean
+</code></pre><h1 id="其他电脑上使用">其他电脑上使用</h1><p>主题的话可以fork一个然后自定义修改</p>
+<pre><code>git remote add mine xxx
+git push -u mine master
+git clone git@github<span class="class">.com</span>:dihihi/jacman<span class="class">.git</span> themes/jacman
+</code></pre><p>备份_config.xml<br>source目录可以创建一个仓库保存在github上</p>
+<h1 id="引用链接">引用链接</h1><ul>
+<li><a href="http://wuchong.me/jacman/2014/11/20/how-to-use-jacman/#more" title="打开" target="_blank" rel="external">如何使用 Jacman 主题</a></li>
+<li><a href="http://wowubuntu.com/markdown/" title="打开" target="_blank" rel="external">Markdown 语法说明 (简体中文版)</a></li>
+<li><a href="http://pleasureswx123.github.io/2014/08/29/%E5%9C%A8github%E4%B8%8A%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/" target="_blank" rel="external">在github上用hexo搭建博客</a></li>
+<li><a href="https://hexo.io/docs/index.html" target="_blank" rel="external">hexo Documentation</a></li>
+<li><a href="http://ibruce.info/2013/11/22/hexo-your-blog/" target="_blank" rel="external">hexo你的博客</a></li>
+</ul>
   
 	</div>
 		<footer class="article-footer clearfix">
